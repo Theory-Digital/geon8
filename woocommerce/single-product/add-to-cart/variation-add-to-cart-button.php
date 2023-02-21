@@ -17,7 +17,7 @@ $dv = getDefaultVariant();
 $temp = wc_get_product( $dv['variation_id'] );
 $price = !empty($temp) ? $temp->get_price() : $product->get_price();
 
-if(isTile) {
+if(isTile($product)) {
   $groutPerBox = $product->get_attribute('Grout Per Box');
   // //not using these anymore
   // $tileArea = $product->get_attribute('Area');

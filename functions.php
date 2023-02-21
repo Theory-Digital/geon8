@@ -9,12 +9,12 @@
 
 //Includes
 //-- facetcolor overwrite
-require_once( get_template_directory() . '/components/functions/sidebar-colors.php');
-require_once( get_template_directory() . '/assets/woohooks/variant-js.php');
-require_once( get_template_directory() . '/assets/functions/pdp.php');
-require_once( get_template_directory() . '/assets/functions/global.php');
-require_once( get_template_directory() . '/assets/functions/grout.php');
-require_once( get_template_directory() . '/assets/functions/accounts.php');
+require_once get_template_directory() . '/components/functions/sidebar-colors.php';
+require_once get_template_directory() . '/assets/woohooks/variant-js.php';
+require_once get_template_directory() . '/assets/functions/pdp.php';
+require_once get_template_directory() . '/assets/functions/global.php';
+require_once get_template_directory() . '/assets/functions/grout.php';
+require_once get_template_directory() . '/assets/functions/accounts.php';
 
 if ( ! defined( 'GEONTILE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
@@ -1041,3 +1041,23 @@ add_filter( 'facetwp_query_args', function( $query_args, $class ) {
   //$query_args['paged'] = ( get_query_var('paged') ? get_query_var('paged') : 1 );
   return $query_args;
 }, 10, 2 );
+
+
+if (!function_exists('isTile')) {
+
+  //Takes in a product or ID and checks if it belongs to the tile category
+  //note, tile variations arent technically categorized, so it will return false, even though the parent is product is categorized as tile
+  function isTile($paramProduct) {
+    $product = $paramProduct;
+
+    $terms = wp_get_post_terms( is_int($product) ? $product : $product->get_id(), 'product_cat' );
+    foreach ( $terms as $term ) $categories[] = $term->slug;
+    if ( in_array( 'variable-product', $categories ) ) {
+      return true;
+    } else {
+      return false;
+    }
+	return false;
+  }
+
+}

@@ -206,6 +206,7 @@
     } else {
       return false;
     }
+	return false;
   }
 
   function isSample($product) {
@@ -216,6 +217,7 @@
     } else {
       return false;
     }
+	  return false;
   }
 
   function isComplexVariableTile($product) {

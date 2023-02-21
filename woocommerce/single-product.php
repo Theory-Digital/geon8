@@ -55,7 +55,7 @@ get_header( 'shop' ); ?>
         $products = getTopSellingProducts(4);
       }
       if(!empty($products)) {
-        if($products % 3 == 0 && $products % 4 != 0) {
+        if(count($products) % 3 == 0 && count($products) % 4 != 0) {
           $cols = 3;
         }
       }
@@ -81,15 +81,19 @@ get_header( 'shop' ); ?>
         if(!empty($alG['alternating_left_image'])) {
           $al['image'] = $alG['alternating_left_image'];
         }
-      ?>
-      <?php includeWithVariables((get_template_directory() . '/components/alternating-w-image-left.php'),
-        array(
+	  	$copy_array = array(
           'title' => $al['heading'],
           'content' => $al['content'],
           'image' => esc_url($al['image']),
-          'buttonUrl' => $al['link']['url'],
-          'buttonText' => $al['link']['title'],
-        )
+          
+        );
+	  	if (isset($al['link']) && isset($al['link']['url']) && isset($al['link']['title'])) {
+			$copy_array['buttonUrl'] = $al['link']['url'];
+			$copy_array['buttonText'] = $al['link']['title'];
+		}
+      ?>
+      <?php includeWithVariables((get_template_directory() . '/components/alternating-w-image-left.php'),
+        $copy_array
       )?>
   </section>
   <section class="tw-max-w-7xl tw-mx-auto tw-mt-24">
@@ -105,15 +109,19 @@ get_header( 'shop' ); ?>
         if(!empty($arG['alternating_right_image'])) {
           $ar['image'] = $arG['alternating_right_image'];
         }
-      ?>
-      <?php includeWithVariables((get_template_directory() . '/components/alternating-w-image-right.php'),
-        array(
+	  	  	$copy_array = array(
           'title' => $ar['heading'],
           'content' => $ar['content'],
           'image' => esc_url($ar['image']),
-          'buttonUrl' => $ar['link']['url'],
-          'buttonText' => $ar['link']['title'],
-        )
+          
+        );
+	  	if (isset($ar['link']) && isset($ar['link']['url']) && isset($ar['link']['title'])) {
+			$copy_array['buttonUrl'] = $ar['link']['url'];
+			$copy_array['buttonText'] = $ar['link']['title'];
+		}
+      ?>
+      <?php includeWithVariables((get_template_directory() . '/components/alternating-w-image-right.php'),
+		$copy_array
       )?>
   </section>
   <section>

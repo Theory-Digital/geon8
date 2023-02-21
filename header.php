@@ -69,7 +69,7 @@
         
         $featured_query->the_post();
         $nav_product = get_product( $featured_query->post->ID );
-        $shape = $nav_product->get_attributes()["shape"]["options"];
+//         $shape = $nav_product->get_attributes()["shape"]["options"];
         $link = get_permalink($featured_query->ID);
         $featureVar_s = wp_get_attachment_image_src(
             $nav_product->get_image_id(),
@@ -191,12 +191,7 @@
                                 <a href="<?php echo $link ?>" class="tw-relative tw-z-1 tw-p-3 tw-h-full tw-w-full tw-flex tw-rounded-lg  tw-transition tw-ease-in-out tw-duration-150 tw-cursor-pointer">
                                     <div class="tw-flex-col tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                                       <div class="tw-min-w-0 tw-flex-1 tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
-                                        <h4 class="tw-border-b tw-border-solid tw-border-transparent group-hover:tw-border-white tw-font-bold tw-tracking-wide tw-uppercase tw-text-white tw-truncate">
-                                            Shop <?php echo ($shape[0] . ' ' . $nav_product->get_name()) ?>
-                                        </h4>
-                                        <?php if($shape[0]): ?>
-                                          <div class="tw-inline-flex tw-text-white tw-inline-block tw-px-2 tw-top-0 tw-left-0 tw-absolute" style="background-color:#20AB9A;"> <?php echo $shape[0] ?></div>
-                                        <?php endif; ?>
+                                        
                                       </div>
                                     </div>
                                 </a>
@@ -279,12 +274,7 @@
                                 <a href="<?php echo $link ?>" class="tw-relative tw-z-1 tw-p-3 tw-h-full tw-w-full tw-flex tw-rounded-lg  tw-transition tw-ease-in-out tw-duration-150 tw-cursor-pointer">
                                     <div class="tw-flex-col tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                                       <div class="tw-min-w-0 tw-flex-1 tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
-                                        <h4 class="tw-border-b tw-border-solid tw-border-transparent group-hover:tw-border-white tw-font-bold tw-tracking-wide tw-uppercase tw-text-white tw-truncate">
-                                            Shop <?php echo ($shape[0] . ' ' . $nav_product->get_name()) ?>
-                                        </h4>
-                                        <?php if($shape[0]): ?>
-                                          <div class="tw-inline-flex tw-text-white tw-inline-block tw-px-2 tw-top-0 tw-left-0 tw-absolute" style="background-color:#20AB9A;"> <?php echo $shape[0] ?></div>
-                                        <?php endif; ?>
+   
                                       </div>
                                     </div>
                                 </a>
@@ -331,7 +321,7 @@
                               </a>
                             </li>
                             <li class="tw-flow-root">
-                              <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-design-hero/';?>" class="tw--m-3 tw-pb-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 tw-group tw-transition tw-ease-in-out tw-duration-150">
+                              <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-Design-hero/';?>" class="tw--m-3 tw-pb-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 tw-group tw-transition tw-ease-in-out tw-duration-150">
                                 <span class="tw-ml-4 group-hover:tw-border-gray-900 tw-border-b tw-border-solid tw-border-transparent">Design Hero</span>
                               </a>
                             </li>
@@ -347,12 +337,7 @@
                                 <a href="<?php echo $link ?>" class="tw-relative tw-z-1 tw-p-3 tw-h-full tw-w-full tw-flex tw-rounded-lg  tw-transition tw-ease-in-out tw-duration-150 tw-cursor-pointer">
                                     <div class="tw-flex-col tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                                       <div class="tw-min-w-0 tw-flex-1 tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
-                                        <h4 class="tw-border-b tw-border-solid tw-border-transparent group-hover:tw-border-white tw-font-bold tw-tracking-wide tw-uppercase tw-text-white tw-truncate">
-                                            Shop <?php echo ($shape[0] . ' ' . $nav_product->get_name()) ?>
-                                        </h4>
-                                        <?php if($shape[0]): ?>
-                                          <div class="tw-inline-flex tw-text-white tw-inline-block tw-px-2 tw-top-0 tw-left-0 tw-absolute" style="background-color:#20AB9A;"> <?php echo $shape[0] ?></div>
-                                        <?php endif; ?>
+
                                       </div>
                                     </div>
                                 </a>
@@ -441,12 +426,7 @@
                                 <a href="<?php echo $link ?>" class="tw-relative tw-z-1 tw-p-3 tw-h-full tw-w-full tw-flex tw-rounded-lg  tw-transition tw-ease-in-out tw-duration-150 tw-cursor-pointer">
                                     <div class="tw-flex-col tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                                       <div class="tw-min-w-0 tw-flex-1 tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
-                                        <h4 class="tw-border-b tw-border-solid tw-border-transparent group-hover:tw-border-white tw-font-bold tw-tracking-wide tw-uppercase tw-text-white tw-truncate">
-                                            Shop <?php echo ($shape[0] . ' ' . $nav_product->get_name()) ?>
-                                        </h4>
-                                        <?php if($shape[0]): ?>
-                                          <div class="tw-inline-flex tw-text-white tw-inline-block tw-px-2 tw-top-0 tw-left-0 tw-absolute" style="background-color:#20AB9A;"> <?php echo $shape[0] ?></div>
-                                        <?php endif; ?>
+
                                       </div>
                                     </div>
                                 </a>
@@ -676,7 +656,7 @@
                           </a>
                         </li>
                         <li class="tw-flow-root">
-                          <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-design-hero/'?>" class="tw-border-b sm:tw-border-hidden tw--mx-4 tw-py-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 hover:tw-bg-gray-50 tw-transition tw-ease-in-out tw-duration-150">
+                          <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-Design-hero/'?>" class="tw-border-b sm:tw-border-hidden tw--mx-4 tw-py-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 hover:tw-bg-gray-50 tw-transition tw-ease-in-out tw-duration-150">
                             <span class="tw-ml-4">Design Hero</span>
                           </a>
                         </li>
@@ -694,7 +674,7 @@
                             </a>
                           </li>
                           <li class="tw-flow-root">
-                            <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-design-hero/'?>" class="sm:tw-border-hidden tw--mx-4 tw-py-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 hover:tw-bg-gray-50 tw-transition tw-ease-in-out tw-duration-150">
+                            <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ).'geon-tile-Design-hero/'?>" class="sm:tw-border-hidden tw--mx-4 tw-py-3 tw-flex tw-items-center tw-text-base tw-font-medium tw-text-gray-900 hover:tw-bg-gray-50 tw-transition tw-ease-in-out tw-duration-150">
                               <span class="tw-ml-4">Design Hero</span>
                             </a>
                           </li>

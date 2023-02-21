@@ -125,10 +125,11 @@ $dv = getDefaultVariant();
                   foreach($variationsOG as $variation) :
                     $attributes = $variation['attributes'];
                     $colorArrays = get_post_meta($variation['variation_id'], '_filter_colours');
-                    $colors = implode(',', $colorArrays[0]);
-
+					$colors = implode(',', $colorArrays[0]);
+				
                     //display variants of each color type
-                    if(sizeof($colors) > 0){
+                    if(sizeof($colorArrays[0]) > 0){
+
                       $vTitle = strip_tags($variation['variation_title']);
                       echo '<div class="variation-wrapper test c">';
                         echo '<div id="'.$variation['variation_id'].'" class="tw-border tw-border-solid  variation-select tw-mr-2 tw-h-16 tw-w-16 tw-overflow-hidden tw-flex tw-items-center tw-justify-center">';

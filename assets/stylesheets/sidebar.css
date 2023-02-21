@@ -1,0 +1,55 @@
+.th-side-bar {
+  overflow-y: scroll;
+  max-height: 100vh;
+  min-width: 235px;
+}
+
+.th-filter-deselect {
+  text-transform: capitalize;
+}
+
+.th-side-bar::-webkit-scrollbar {
+  width: 10px !important;
+  background: transparent !important;
+}
+
+.th-collection-select::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+.th-collection-select::-webkit-scrollbar-thumb, .th-side-bar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+.th-collection-select::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.th-color-bullet {
+  border: solid 1px white;
+  padding:1px;
+  outline: solid white 2px;
+  margin-left:3px;
+}
+
+.th-color-bullet.checked {
+  padding:1px;
+  outline: solid rgba(0,0,0,0.8) 2px;
+}
+
+.th-color-bullet:hover {
+  padding:1px;
+  outline: solid rgba(0,0,0,0.3) 2px;
+}
+
+.th-checkbox {
+  min-width: 1rem;
+  min-height: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

@@ -1,0 +1,26 @@
+@import "sidebar.css";
+#headerOverlay {
+  z-index: 11;
+}
+
+
+.th-var-select-bar {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */ 
+}
+
+.price del {
+  color: rgba(0,0,0, 0.3);
+  text-decoration-color: rgba(0,0,0, 0.3);
+  margin-right: 0.5rem;
+}
+
+.price ins {
+  text-decoration: none;
+}
+
+.shop-img-wrapper img {
+  width: 100% !important;
+  min-height:214.31px;
+  object-fit: contain;
+}

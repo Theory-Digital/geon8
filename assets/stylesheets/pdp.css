@@ -1,0 +1,239 @@
+/* weird shipping notice appears -- disabling here for now */
+main > * > .woocommerce-notices-wrapper {
+  display:none;
+}
+
+.sezzle-checkout-button-wrapper .sezzle-button-text .sezzle-payment-amount {
+  font-weight: 500 !important;
+  font-size: 0.75rem !important;
+}
+.sezzle-button-text.sezzle-left {
+  font-size: 0.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.price {
+  display: none;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.th-group-img-scale:hover .shop-img-wrapper img{
+  transform: scale(1.05);
+}
+
+.shop-img-wrapper img {
+  transition: all;
+  transition-duration: 0.1s;
+}
+
+.quantity::not('.mini-cart-i') {
+  margin-bottom: 1rem;
+}
+
+.reset_variations {
+  display: none !important;
+}
+
+.wc-no-matching-variations.woocommerce-info {
+  color: rgb(185 28 28);
+  background-color: rgb(254 242 242);
+  padding: 1rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.wpgs.woocommerce-product-gallery.wpgs--with-images {
+  padding: 16px;
+}
+
+.woocommerce-variation-price {
+  display: none !important;
+}
+
+.slick-slide {
+  margin: 0px !important;
+}
+
+.overage-select {
+  border-color: #9ca3af !important;
+  color: #1f2937 !important;
+}
+
+/* button.button.alt {
+  background: black !important;
+  width: 100%;
+  padding: 20px;
+} */
+
+.add-btn:hover {
+  opacity: 0.75;
+}
+
+.th-shift {
+  top: -3em;
+  right: 0;
+  font-size: 12px;
+}
+
+.woocommerce a.button.add-sample-btn {
+  display:flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+main > .product {
+  display: flex;
+}
+
+.wpgs.woocommerce-product-gallery.wpgs--with-images {
+  padding: 0;
+}
+
+.size-shop_single {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.variations select {
+  border: solid 2px rgba(229 231 235);
+  padding: .5rem 1rem;
+}
+
+.reset_variations {
+  margin-left: 1rem;
+}
+
+.single-product .onsale {
+  position: absolute !important;
+  z-index: 5;
+}
+
+.th-gallery {
+  display: grid;
+}
+
+.th-gallery.th-gallery-multi {
+  gap: 1rem;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.th-gallery-itm {
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.th-circle-plus {
+  z-index: 2;
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  background-color: white;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin:auto;
+  top:0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.th-circle-plus::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #1f2937;
+  height: 2px;
+  width: 50%;
+  margin-top: -1px;
+  top: 50%;
+  left: 25%;
+  right: 1px;
+  z-index: 9;
+}
+.th-circle-plus::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #1f2937;
+  width: 2px;
+  height: 50%;
+  margin-left: -1px;
+  left: 50%;
+  top: 25%;
+  bottom: 1px;
+  z-index: 9;
+}
+/* .th-gallery > div:first-of-type {
+  grid-column: span 2 / span 2;
+  width: 100%;
+  height: unset;
+} */
+
+.th-gallery-itm:hover .th-circle-plus {
+ opacity: 100;
+ transition: all;
+ transition-duration:0.3s;
+}
+
+.th-gallery-itm:hover > img {
+  opacity: .7;
+  cursor: pointer;
+  transition: all;
+  transition-duration:0.3s;
+}
+
+.th-gallery-itm > img{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.th-gallery > div:not('.tw-slider') {
+  grid-column: span 1 / span 1;
+  width: 100%;
+  height: auto;
+}
+
+.th-gallery.th-single {
+  display: block;
+}
+
+div.th-full-col {
+  grid-column: full;
+}
+
+.th-gallery.th-single img {
+  object-fit: contain;
+}
+
+.woocommerce-product-gallery__wrapper img {
+  width: 100%; 
+}
+
+.woocommerce-product-gallery__wrapper.spai-bg-prepared, .woocommerce-product-gallery__wrapper.spai-bg-prepared img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.detail-box .detail-answer {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* button.button.alt {
+    background: black !important;
+    width: auto;
+    padding: 20px;
+  } */
+}
+
+.sezzle-shopify-info-button {
+  display: flex !important;
+}

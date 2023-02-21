@@ -1,0 +1,26 @@
+.flickity-viewport {
+    overflow: visible !important;
+}
+
+.flickity-button:disabled {
+    display: none;
+}
+
+.content-area:not(#primary) {
+    margin-top:1.5rem;
+  }
+
+.carousel-cell a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 384px auto auto;
+    height: auto;
+}
+  
+
+@media screen and (min-width: 500px) {
+    .th-general-slider .flickity-slider {
+        margin-left:-459px;
+    }
+    
+  }

@@ -1,0 +1,58 @@
+.th-accounts input:not([type="submit"], [type="checkbox"], [type=button], [type=file], [type=image], [type=radio]) {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    height: 60px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+}
+
+.th-accounts .gform_heading {
+    text-align: center;
+}
+
+.th-accounts .gfield_checkbox input[type=checkbox] {
+    margin-top: 0px !important;
+}
+
+.th-accounts input[type="submit"] {
+    color: black;
+    background-color: #dddddd;
+    transition: background-color 0.2s, 0.2s;
+    margin: 1rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 18px;
+    padding-left:1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    width: 100% !important;
+    border: solid 1px #dddddd;
+}
+
+.th-accounts input[type="submit"]:hover {
+    background-color: white;
+    border: solid 1px black;
+}
+
+.th-accounts .gf_login_links {
+    display: flex;
+    justify-content: center;
+}
+
+.th-accounts .gform_footer.top_label {
+    padding-bottom: 0px !important;
+}
+
+.th-accounts .gform_footer.top_label input {
+    margin-bottom: 0px !important;
+}
+
+.th-accounts .gform_title {
+    font-size: 32px !important;
+    line-height: 41px !important;
+}

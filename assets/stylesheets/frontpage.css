@@ -1,0 +1,15 @@
+/* -----------------------------------@@@ */
+#tabsTable {
+  position: relative;
+}
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+ 
+#tabsTable > div,
+.target {
+  transition: all .35s ease-in-out;
+}
